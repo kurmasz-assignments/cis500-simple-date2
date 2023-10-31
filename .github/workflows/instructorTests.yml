@@ -1,0 +1,14 @@
+name: my_date check
+on: 
+   workflow_dispatch:
+   push:
+      tags:
+         - checkMe*
+jobs:
+   run-instructor-tests:
+      runs-on: ubuntu-latest
+      steps:
+         - uses: actions/checkout@v3
+         - run: curl https://autograder.computing.gvsu.edu/ldate_instructor_test.py --output ldate_instructor_test.py -k
+         - run: python3 -m unittest ldate_student_test.py
+         - run: python3 -m unittest ldate_instructor_test.py
