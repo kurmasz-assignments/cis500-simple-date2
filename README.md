@@ -11,7 +11,7 @@ For the most part, you will be re-writing Project 1 as a class instead of a modu
 
 * This is an _individual_ project.
 * You may use/adapt _your_ code from Project 1.
-* Follow this GitHub Classroom link (), accept the assignment, then clone the resulting repo. 
+* Follow this GitHub Classroom link (https://classroom.github.com/a/b_bmy7bk), accept the assignment, then clone the resulting repo. 
 * Implement the methods in `ldate.py`.
   * Pay attention to which methods are instance methods and which are class methods.
   * Notice that the `to_str` method is now `__str__`
